@@ -73,6 +73,7 @@ function DotDemo(showSprites, waitframes)
 % 12/15/15  mk      Query and obey gpu point size limits.
 
 AssertOpenGL;
+Screen('Preference', 'SkipSyncTests', 1);
 
 if nargin < 1
     showSprites = [];
