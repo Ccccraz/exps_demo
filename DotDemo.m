@@ -72,8 +72,8 @@ function DotDemo(showSprites, waitframes)
 % 4/18/10   mk      Add support for demo'ing PsychDrawSprites2D() command.
 % 12/15/15  mk      Query and obey gpu point size limits.
 
-AssertOpenGL;
 Screen('Preference', 'SkipSyncTests', 1);
+AssertOpenGL;
 
 if nargin < 1
     showSprites = [];
